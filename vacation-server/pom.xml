@@ -18,5 +18,7 @@
             <version>${project.version}</version>
         </dependency>
     </dependencies>
-
+    <build>
+        <finalName>vacation-server</finalName>
+    </build>
 </project>
