@@ -15,21 +15,28 @@ public class SpringSessionTestController {
 
     @Autowired
     private TestService testService;
-    @RequestMapping(value="/api1")
-    public Object api1(HttpServletRequest request)
-    {
+
+    @RequestMapping(value = "/api1")
+    public Object api1(HttpServletRequest request) {
         TestDto testDto = new TestDto();
         testDto.setName("hhha");
+
+        testDto.setName("hhha");
+        testDto.setName("hhha");
+        testDto.setName("hhha");
+        testDto.setName("hhha");
+
+
         return testService.test(testDto);
     }
-    @RequestMapping(value="/api2")
-    public Object api2(HttpServletRequest request)
-    {
+
+    @RequestMapping(value = "/api2")
+    public Object api2(HttpServletRequest request) {
         request.getSession();
         System.out.println(request.getSession());
         System.out.println(request.getSession().getClass());
         System.out.println(request.getSession().getId());
 
-        return request.getRequestURI() +" ----" + request.getRemoteHost();
+        return request.getRequestURI() + " ----" + request.getRemoteHost();
     }
 }
