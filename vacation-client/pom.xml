@@ -22,6 +22,12 @@
         <artifactId>vacation-server</artifactId>
         <version>${project.version}</version>
     </dependency>
+    <dependency>
+        <groupId>com.skyguard.sps</groupId>
+        <artifactId>vacation-utils</artifactId>
+        <version>${project.version}</version>
+    </dependency>
+
 
 </dependencies>
 

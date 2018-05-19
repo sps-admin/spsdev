@@ -63,8 +63,18 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>1.4.3.RELEASE</version>
                 <configuration>
                     <mainClass>com.skyguard.sps.client.Application</mainClass>
                     <layout>ZIP</layout>
@@ -84,5 +94,6 @@
         <module>../vacation-client</module>
         <module>../vacation-server</module>
         <module>../vacation-common</module>
+        <module>../vacation-utils</module>
     </modules>
 </project>
